@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    /* padding: 0; */
+}
+
+body {
+    display: flex;
+    display: grid;
+    background-color: rgb(226, 226, 226);
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: rgb(226, 226, 226);
+    color: #1a2b50;
+    text-align: center;
+    display: flex;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: Cambria;
+    padding: 20px 30px 20px 30px;
+}
+
+nav {
+    background-color: #1a2b50;
+    color: white;
+    flex-wrap: wrap;
+    display: flex;
+    display: grid;
+    font-family: Cambria;
+    grid-template-columns: 3fr 1fr;
+    justify-items: end;
+    align-items: center;
+    opacity: 0.9;
+    padding: 20px 30px 20px 30px;
+}
+
+.titulo{
+    margin-left: 50px;
+    display: flex;
+    display: grid;
+    justify-items: center;
+    
+}
+
+
+main{
+    display: flex;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+section {
+    display: flex;
+    /* display: grid; */
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    row-gap: 30px;
+    padding: 70px;
+}
+
+
+aside {
+    background-image: linear-gradient(to right, white, rgb(144, 144, 239));
+    border: 1px solid #1a2b50;
+    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 100px;
+    border-radius: 12px;
+    align-items: center;
+    padding: 20px;
+    width: 85vh;
+    min-width: 320px;
+    max-width: 800px;
+    width: 100%;
+}
+
+aside ul {
+    display: grid;
+    row-gap: 4px;
+    list-style-type: none;
+}
+
+aside img {
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+aside:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-shrink: 0;
+    bottom: 0;
+    background-color: #1a2b50;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    height: 1vh;
+    opacity: 0.9;
+}
