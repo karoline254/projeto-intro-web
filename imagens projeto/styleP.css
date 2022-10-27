@@ -23,13 +23,15 @@ header{
 }
 
 nav{
-    height: 10vh;
+    height: 5vh;
+    padding-right: 20px;
     display: flex;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
     align-items: center;
-    justify-items: center;
+    justify-items: end;
 }
+
 
 .botaoInicio{
     border-radius: 8px;
@@ -55,7 +57,7 @@ section{
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 30px;
     padding: 70px 40px 70px 40px; 
-    
+
 }
 
 aside{

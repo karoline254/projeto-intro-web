@@ -24,16 +24,31 @@ header {
 
 nav {
     background-color: #1a2b50;
+    border-radius: 8px;
     color: white;
     flex-wrap: wrap;
     display: flex;
     display: grid;
     font-family: Cambria;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 2fr 1fr;
     justify-items: end;
     align-items: center;
     opacity: 0.9;
     padding: 20px 30px 20px 30px;
+}
+
+.jogos{
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    display: grid;
+    width: 30vh;
+    height: 4vh;
+    align-items: center;
+    
+}
+.jogos:hover{
+    background-color: #1a2b50;
 }
 
 .titulo{
@@ -74,7 +89,7 @@ aside {
     align-items: center;
     padding: 20px;
     width: 85vh;
-    min-width: 320px;
+    min-width: 300px;
     max-width: 800px;
     width: 100%;
 }
