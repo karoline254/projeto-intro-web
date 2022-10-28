@@ -2,20 +2,20 @@
 
 // // ChampionsLeague 22/23
 
-const nome01 = "Barcelona"
-const qtdGanhouBarcelona = 5
-const jogadoresDoAtaqueB = [" Lewandowski", " Raphinha", "Depay", " Ansu Fati", " Ferran"]
-const classificacaoB = true
+// const nome01 = "Barcelona"
+// const qtdGanhouBarcelona = 5
+// const jogadoresDoAtaqueB = [" Lewandowski", " Raphinha", "Depay", " Ansu Fati", " Ferran"]
+// const classificacaoB = true
 
-const nome02 = "Manchester City"
-const qtdGanhouManchesterC = 7
-const jogadoresDoAtaqueMC = [" Haaland", " Mahrez", " Julián"]
-const classificacaoMC = true
+// const nome02 = "Manchester City"
+// const qtdGanhouManchesterC = 7
+// const jogadoresDoAtaqueMC = [" Haaland", " Mahrez", " Julián"]
+// const classificacaoMC = true
 
-const nome03 = "Chelsea"
-const qtdGanhouChelsea = 2
-const jogadoresDoAtaqueC = [" Armando", " Omarin", " Mitchy", " Sterling"]
-const classificacaoC = false
+// const nome03 = "Chelsea"
+// const qtdGanhouChelsea = 2
+// const jogadoresDoAtaqueC = [" Armando", " Omarin", " Mitchy", " Sterling"]
+// const classificacaoC = false
 
 // console.log(`Time: ${nome01.toLocaleUpperCase()}`, `\nQuantas vezes campeão: ${qtdGanhouBarcelona}`, `\nJogadores do Ataque: ${jogadoresDoAtaqueB}`, `\nSe classificou: ${classificacaoB}`)
 // console.log(`Time: ${nome02.toLocaleUpperCase()}`, `\nQuantas vezes campeão: ${qtdGanhouManchesterC}`, `\nJogadores do Ataque: ${jogadoresDoAtaqueMC}`, `\nSe classificou: ${classificacaoMC}`)
@@ -33,44 +33,50 @@ const classificacaoC = false
 const barcelona = {
     nome: "Barcelona",
     tecnico: "Xavi",
-    jogadoresDoAtaque: [" Raphinha", " Ferran", " Lewandowski"],
+    atacantes: [" Raphinha", " Ferran", " Lewandowski"],
     estadio: "Camp Nou",
-    classificacao: true
+    classificacao: "Sim",
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/thumb/4/43/FCBarcelona.svg/1200px-FCBarcelona.svg.png"
 }
 const manchester = {
     nome: "Manchester City",
     tecnico: "Josep Guardiola",
-    jogadoresDoAtaque: [" Haaland", " Julián", " Mahrez"],
+    atacantes: [" Haaland", " Julián", " Mahrez"],
     estadio: "Etihad Stadium",
-    classificacao: true
+    classificacao: "Sim",
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/0/02/Manchester_City_Football_Club.png"
 }
 const chelsea = {
     nome: "Chelsea",
     tecnico: "Graham Potter",
-    jogadoresDoAtaque: ["Pulisic", "Sterling",  "Aubameyang"],
+    atacantes: ["Pulisic", "Sterling",  "Aubameyang"],
     estadio: "Stamford Bridge",
-    classificacao: true
+    classificacao: "Sim",
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/thumb/c/cc/Chelsea_FC.svg/1200px-Chelsea_FC.svg.png"
 }
 const psg = {
     nome: "Paris Saint-Germain",
     tecnico: "Christophe Galtier",
-    jogadoresDoAtaque: ["Messi", "Neymar", "Mbappé"],
+    atacantes: ["Messi", "Neymar", "Mbappé"],
     estadio: "Parc des Princes",
-    classificacao: true
+    classificacao: "Sim",
+    imagem: "https://images.psg.media/media/2874/psg_logo_seul_volume_rvb.png"
 }
 const bayern = {
     nome: "Bayern de Munique",
     tecnico: "Franz John",
-    jogadoresDoAtaque: ["Mané", "Coman", "Müller"],
+    atacantes: ["Mané", "Coman", "Müller"],
     estadio: "Allianz Arena",
-    classificacao: true
+    classificacao: "Sim",
+    imagem: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg/640px-FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg.png"
 }
 const borussia = {
     nome: "Borussia Dortmund",
     tecnico: "Edin Terzic",
-    jogadoresDoAtaque: ["Adeyemi", "Hazard", "Moukoko"],
+    atacantes: ["Adeyemi", "Hazard", "Moukoko"],
     estadio: "Signal Iduna Park",
-    classificacao: true
+    classificacao: "Sim",
+    imagem: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Borussia_Dortmund_logo.svg/800px-Borussia_Dortmund_logo.svg.png"
 }
 
 // const championsLeague = []
@@ -108,7 +114,7 @@ console.log("--------- EXERCICIO 01 // SEMANA 03 ----------")
 const time = [barcelona, manchester, chelsea, psg, bayern, borussia]
 
 for (let objeto of time) {
-    objeto.jogadoresDoAtaque = objeto.jogadoresDoAtaque.join(", ")
+    objeto.atacantes = objeto.atacantes.join(", ")
 }
 
 console.log(barcelona)
@@ -147,10 +153,11 @@ const time1 = [barcelona, manchester, chelsea, psg, bayern, borussia]
 // const timeEscolhido = prompt("0 = Barcelona, 1 Manchester City, 2 = Chelsea. Escolha seu time: ")
 // let novoArray = []
 
-const receberObjString = (time1, timeEscolhido) => {
-    const resultado = time1.filter((time1) => {
-        return time1.nome === timeEscolhido
-    })
+// const receberObjString = (time1, timeEscolhido) => {
+//     const resultado = time1.filter((time1) => {
+//         return time1.nome === timeEscolhido
+//     })
+// }
 //     if(resultado.length > 0){
 //         console.log(resultado)
 //     }else{
@@ -158,4 +165,55 @@ const receberObjString = (time1, timeEscolhido) => {
 //     }
 // }
 
-receberObjString(time1, timeEscolhido)
+// receberObjString(time1, timeEscolhido);
+
+let buscarTime = document.getElementById("txtBusca")
+let novoTime2 = [...time1]
+const buscar = () => {
+    // console.log(buscarTime.value)
+    if(buscarTime.value === ""){
+      alert("Nenhum time encontrado!");  
+    }
+    if(time1.nome !== buscarTime.value){
+        novoTime2 = time1.filter((time) => {
+        return time.nome.toLocaleLowerCase().includes(buscarTime.value.toLocaleLowerCase()) || time.tecnico.toLocaleLowerCase().includes(buscarTime.value.toLocaleLowerCase())
+    }) }
+   
+    let limpa = document.getElementsByClassName("blocoTime")
+    const tamanho = limpa.length
+    imprime(novoTime2)
+    for(let i = 0; i < tamanho; i++){
+        console.log(novoTime2)
+        limpa[0].remove()
+    }
+
+};
+
+let section = document.getElementsByClassName("section")
+    const arrayNomesCorretos = ["Nome", "Técnico", "Atacantes", "Estádio", "Classificação"]
+const imprime = (novoTime2) => {
+
+    for(let i in novoTime2){
+        let contador = 0;
+        let novoArticle = document.createElement("article")
+        let novoUl = document.createElement("ul")
+        novoArticle.appendChild(novoUl)
+        for(let j in novoTime2[i]){
+            if(j !== "imagem"){
+            let novoLi = document.createElement("li")
+            let conteudoLi = document.createTextNode(`${arrayNomesCorretos[contador]}: ${novoTime2[i][j]}`)
+            novoLi.appendChild(conteudoLi)
+            novoUl.appendChild(novoLi)
+            contador++
+        }else{
+            let novoImagem = document.createElement("img")
+            novoImagem.setAttribute("src", novoTime2[i][j])
+            novoArticle.insertAdjacentElement("beforeend", novoImagem)
+        }
+        }
+        section[0].insertAdjacentElement("beforeend", novoArticle).setAttribute("class", "blocoTime")
+    }
+    
+}
+
+imprime(novoTime2)

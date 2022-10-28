@@ -7,12 +7,12 @@ body{
     display: flex;
     display: grid;  
     background-color: rgb(226, 226, 226); 
-    
 }
 
 header{
     background-color: #1a2b50;
-   
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     opacity: 0.9;
     color: white;
     display: flex;
@@ -21,6 +21,7 @@ header{
     align-items: center;
     font-family: Cambria;
     height: 10vh;
+    box-shadow: 0px 0px 10px #0e0e0e;
 }
 
 nav{
@@ -32,20 +33,19 @@ nav{
     align-items: center;
     justify-items: end;
 }
-
-
-.botaoInicio{
+a{
+    border: 1px solid #1a2b50;
     border-radius: 8px;
-    background-color: #1a2b50;
-    display: flex;
-    display: grid;
-    width: 30vh;
-    height: 4vh;
-    align-items: center;
-    
+    padding: 4px 6px 4px 6px;
+    text-decoration: none;
+    color: #5679bf;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition-duration: .5s;
 }
-.botaoInicio:hover{
-    background-color: white;
+
+a:hover{
+   color: white;
 }
 
 section{
@@ -61,11 +61,8 @@ section{
 
 }
 
-aside{
-    border: 1px #1a2b50;
+article{
     background-image: linear-gradient(to bottom, white, rgb(144, 144, 239));
-    opacity: 0.9;
-    border: 1px solid #1a2b50;
     border-radius: 12px;
     text-align: center;
     flex-wrap: wrap;
@@ -80,14 +77,14 @@ aside{
     box-shadow: 0px 0px 10px #1a2b50;  
 }
 
-aside img{
+article img{
     max-width: 100%;
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
 
-aside:hover img{
+article:hover img{
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
