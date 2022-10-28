@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    /* padding: 0; */
+    padding: 0;
 }
 
 body {
@@ -8,6 +8,12 @@ body {
     display: grid;
     background-color: rgb(226, 226, 226);
     flex-wrap: wrap;
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: 1fr;
 }
 
 header {
@@ -20,21 +26,30 @@ header {
     align-items: center;
     font-family: Cambria;
     padding: 20px 30px 20px 30px;
+    row-gap: 20px;
 }
+
 
 nav {
     background-color: #1a2b50;
-    border-radius: 8px;
-    color: white;
-    flex-wrap: wrap;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px 30px 20px 30px;
+    box-shadow: 0px 0px 7px #1a2b50;
     display: flex;
     display: grid;
-    font-family: Cambria;
-    grid-template-columns: 3fr 2fr 1fr;
-    justify-items: end;
-    align-items: center;
-    opacity: 0.9;
-    padding: 20px 30px 20px 30px;
+    row-gap: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+a:hover{
+   color: #929bad;
 }
 
 .jogos{
@@ -50,15 +65,6 @@ nav {
 .jogos:hover{
     background-color: #1a2b50;
 }
-
-.titulo{
-    margin-left: 50px;
-    display: flex;
-    display: grid;
-    justify-items: center;
-    
-}
-
 
 main{
     display: flex;
@@ -80,7 +86,7 @@ section {
 
 
 aside {
-    background-image: linear-gradient(to right, white, rgb(144, 144, 239));
+    background-image: linear-gradient(to bottom, white, rgb(144, 144, 239));
     border: 1px solid #1a2b50;
     display: flex;
     display: grid;
@@ -92,12 +98,15 @@ aside {
     min-width: 300px;
     max-width: 800px;
     width: 100%;
+    box-shadow: 0px 0px 7px #1a2b50;
+    transition: width .5s, height .5s;
 }
 
 aside ul {
     display: grid;
     row-gap: 4px;
     list-style-type: none;
+    font-size: 1.1em;
 }
 
 aside img {
@@ -114,15 +123,17 @@ aside:hover img {
 }
 
 footer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    flex-shrink: 0;
-    bottom: 0;
+    position: fixed;
+    width: 100%;
     background-color: #1a2b50;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    padding-top: auto;
+    bottom: 0;
     color: white;
-    padding: 30px;
-    height: 1vh;
-    opacity: 0.9;
+    padding: 10px;
 }
+

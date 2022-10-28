@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    section{
+        width: 90vw;
+      
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main{
+        background-image: linear-gradient(to top, #1a2b50, white);
+    }
+    section{
+        width: 900px;
+        
+    }
+}

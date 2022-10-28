@@ -12,6 +12,7 @@ body{
 
 header{
     background-color: #1a2b50;
+   
     opacity: 0.9;
     color: white;
     display: flex;
@@ -62,7 +63,7 @@ section{
 
 aside{
     border: 1px #1a2b50;
-    background-image: linear-gradient(to left, white, rgb(144, 144, 239));
+    background-image: linear-gradient(to bottom, white, rgb(144, 144, 239));
     opacity: 0.9;
     border: 1px solid #1a2b50;
     border-radius: 12px;
@@ -75,7 +76,8 @@ aside{
     align-items: center;
     min-width: 320px;
     max-width: 800px; 
-    width: 100%;   
+    width: 100%; 
+    box-shadow: 0px 0px 10px #1a2b50;  
 }
 
 aside img{
@@ -97,7 +99,7 @@ footer {
     background-color: #1a2b50;
     text-align: center;
     color: white;
-    opacity: 0.9;
+    padding: 10px;
 }
 
 

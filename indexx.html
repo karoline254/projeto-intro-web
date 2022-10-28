@@ -8,23 +8,27 @@
     <title>Página Inicial</title>
     <script src="index.js"></script>
     <link rel="stylesheet" href="styleIN.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+
 </head>
 
 <body>
+    <div id="container">
     <header>
        <h1>Página Inicial</h1>
+       <hr>
+       <div class="titulo">
+        <h3>A Liga dos Campeões da UEFA é uma competição anual de clubes de futebol a nível continental, 
+            organizada pela União das Associações Europeias de Futebol e disputada por clubes europeus.</h3> 
+    </div>
     </header>
     <nav>
-        <div class="titulo">
-            <h3>A Liga dos Campeões da UEFA é uma competição anual de clubes de futebol a nível continental, 
-                organizada pela União das Associações Europeias de Futebol e disputada por clubes europeus.</h3> 
-        </div>
+        <a href="/imagens projeto/partidas.html">Próximos Jogos</a>
         <div class="divBusca">
            
             <input type="text" id="txtBusca" placeholder="Buscar..." />
             <button id="Busca" onClick="buscar">Buscar</button>
         </div>
-        <div> <button class="jogos" ><a href="/imagens projeto/partidas.html"> Próximos Jogos</a></button></div>
     </nav>
     <main>
         <section>
@@ -106,10 +110,10 @@
         </section>
     </main>
     <footer>
-        <q> O sucesso é uma jornada, não um destino. </q>
-        <p>Karoline Oliveira || <a href="https://github.com/karoline254">GitHub</a></p>
-        <!-- <audio src="midia/instrumento.mp3" autoplay > </audio> -->
+        <p>  Feito por Karoline Oliveira  <a href="https://github.com/karoline254">GitHub</a></p>
+        
+        <!-- <audio src="midia/instrumento.mp3" autoplay> </audio> -->
     </footer>
+</div>
 </body>
-
 </html>
